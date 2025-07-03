@@ -2,12 +2,12 @@
 This project implements a bidirectional visitor counter using an Arduino Uno. It counts the number of people entering and exiting a room using two IR sensors. The count is displayed on a 16x2 LCD screen via the I2C interface. This system is useful for applications like room occupancy tracking, event halls, libraries, or any place where knowing the number of people is important.
 
 ## Features
--Counts people entering and exiting through a single passage
--Uses two IR sensors to detect direction of movement
--Displays current count on LCD in real-time
--Resets counter if it goes below zero
--Compact and efficient code
--User-friendly interface
+- Counts people entering and exiting through a single passage
+- Uses two IR sensors to detect direction of movement
+- Displays current count on LCD in real-time
+- Resets counter if it goes below zero
+- Compact and efficient code
+- User-friendly interface
 
 ## Components Used
 
@@ -22,16 +22,16 @@ This project implements a bidirectional visitor counter using an Arduino Uno. It
 | USB Cable              | 1         |
 
 ## Working Principle
-Entry Detection:
+- Entry Detection:
 
-   -If IR Sensor 1 is triggered before Sensor 2, the system assumes a person has entered.
+   - If IR Sensor 1 is triggered before Sensor 2, the system assumes a person has entered.
 
-   -Visitor count is incremented.
+   - Visitor count is incremented.
 
-Exit Detection:
+- Exit Detection:
 
-  -If IR Sensor 2 is triggered before Sensor 1, it assumes a person has exited.
+  - If IR Sensor 2 is triggered before Sensor 1, it assumes a person has exited.
 
-  -Visitor count is decremented.
+  - Visitor count is decremented.
 
-The current count is updated and displayed on the 16x2 LCD.
+- The current count is updated and displayed on the 16x2 LCD.
